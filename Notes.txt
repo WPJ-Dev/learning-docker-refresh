@@ -1,0 +1,23 @@
+Docker is a technology that provides the ability to containerize environments for running applications in lieu of virtual machines(VMs).
+
+Primary purported advantage is the utilization of resources, specifically operating system(OS) usage. Where VMs requires a spin up of an entire OS and associated resouces, docker containers can share resources/OS of the host machine possibly making for a lighter weight solution versus VMs.
+
+May have issues due to this content being outdated, references to docker-machine being used.
+
+Image vs Container: Template vs Instance
+
+`docker`
+    ps: list containers
+
+`docker run` 
+    -i:(interactive) keeps STDIN(standard input) open 
+    -t:(--tty) activate a suo tty 'secure?'
+    -d: run container in background and print container ID
+    -p: publish a container's port(s) to...
+    -v: bind mount a volume--link folders internally and externally
+
+Docker and data
+    -v to create a linked volume for persitent storage
+    create volume bound to container
+        `docker create -v <directory> <name> <type>`
+        `docker run -it --volumes-from <bound volume name>....`
