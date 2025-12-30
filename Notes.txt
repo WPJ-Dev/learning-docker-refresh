@@ -36,3 +36,7 @@ Dockerfiles
 
     -ENTRYPOINT: 
     -CMD: commands to be run
+
+Where to store docker images
+    Docker Hub: free if public(1 private repo free?)
+    Other registries?: []
