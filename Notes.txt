@@ -40,3 +40,5 @@ Dockerfiles
 Where to store docker images
     Docker Hub: free if public(1 private repo free?)
     Other registries?: []
+
+    Docker [export(contianer's filesystem)/save(images)] to tar archiver
