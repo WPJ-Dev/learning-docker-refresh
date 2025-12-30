@@ -1,0 +1,11 @@
+FROM ubuntu:25.10
+
+RUN apt-get update -y
+RUN apt-get install nginx -y
+
+RUN echo 'Testing some stuff...' > /var/www/html/index.html
+
+EXPOSE 80
+
+ENTRYPOINT [ "nginx" ]
+CMD ["-g", "daemon off;"]

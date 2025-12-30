@@ -21,3 +21,18 @@ Docker and data
     create volume bound to container
         `docker create -v <directory> <name> <type>`
         `docker run -it --volumes-from <bound volume name>....`
+
+
+Dockerfiles
+    - Build instructions that execute build steps
+
+    -`docker build .` builds 'Dockerfile'(standard naming)
+        -t: name and optionally tag([name]:[tag])
+        -f: name of Dockerfile if not standard
+
+    -FROM: the base image used for build ex.(unbutu 25.10)
+
+    -RUN: 
+
+    -ENTRYPOINT: 
+    -CMD: commands to be run
