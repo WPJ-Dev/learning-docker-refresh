@@ -41,4 +41,10 @@ Where to store docker images
     Docker Hub: free if public(1 private repo free?)
     Other registries?: []
 
-    Docker [export(contianer's filesystem)/save(images)] to tar archiver
+    Docker [export(contianer's filesystem)/save(images)] to tar archive
+
+
+Multi Container Apps
+    Small python app and redis linked together.
+    --link deprecated but provided the ability to link contianers together on run command
+    --creating shared network via `docker network create <network-name>` then assigning container on run via `--net <network-name>`
